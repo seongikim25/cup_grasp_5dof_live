@@ -64,7 +64,8 @@ python3 main.py --run --model best.pt --cam 0
 - ID2: Shoulder
 - ID3: Elbow
 - ID4: Wrist
-- ID5: Gripper
+- ID5: Gripper 1
+- ID6: Gripper 2
 
 Python 명령 형식:
 
