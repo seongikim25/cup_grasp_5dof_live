@@ -1,0 +1,10 @@
+# 로그 파일 제외
+logs/
+*.log
+
+# pytorch 파일 제외
+*.pt
+
+# 환경 설정 파일 제외
+.venv
+config/local.json
