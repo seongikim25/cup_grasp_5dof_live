@@ -155,12 +155,13 @@ class AppConfig:
     USE_MULTI_RADIUS_TABLE: bool = True
 
     RADIUS_JOINT_TABLE = (
-        (145.0, 148.83, 288.0, 90.0), # 최소 값 
-        (186.25, 130.0, 255.0, 105.0), # 커스텀 값 
-        (227.5, 111.04, 241.41, 102.54), # 가장 중간 값
-        (268.75, 88.0, 185.0, 135.0), # 커스텀 값 
-        (310.0, 69.14, 151.0, 150.0), # 최대 값 
-    )
+    (145.0, 148.83, 288.00,  90.00),   # MIN
+    (186.25, 130.00, 255.00, 105.00),
+    (227.5, 111.04, 241.41, 102.54),   # MID
+    (239.0, 104.59, 215.00, 105.00),   # 문제 구간 보정점
+    (268.75, 88.00, 185.00, 135.00),
+    (310.0, 69.14, 151.00, 150.00),    # MAX
+)
 
     # ============================================================
     # AX-12A
@@ -269,8 +270,8 @@ class AppConfig:
     # Motion Timing
     # 안전 테스트용 저속 설정
     # ============================================================
-    MOVE_TIME_SEC: float = 4.0
-    GRIPPER_TIME_SEC: float = 2.5
+    MOVE_TIME_SEC: float = 2.5
+    GRIPPER_TIME_SEC: float = 1.5
 
     MOVE_DELAY_SEC: float = 1.0
     GRIPPER_DELAY_SEC: float = 1.2
@@ -281,8 +282,8 @@ class AppConfig:
     # 순서: ID1, ID2, ID3, ID4, ID5, ID6
     MOTOR_MIN_MOVING_SPEEDS: Tuple[int, ...] = (30, 35, 35, 30, 30, 30)
 
-    MIN_MOVING_SPEED: int = 30
-    MAX_MOVING_SPEED: int = 80
+    MIN_MOVING_SPEED: int = 40
+    MAX_MOVING_SPEED: int = 120
 
     # ============================================================
     # Emergency Stop
