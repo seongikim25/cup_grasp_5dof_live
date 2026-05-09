@@ -1,3 +1,4 @@
+# 색깔을 찾아내는 pick_color.py 코드
 import cv2
 import numpy as np
 
