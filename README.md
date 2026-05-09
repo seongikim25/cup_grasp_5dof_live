@@ -58,7 +58,7 @@ python3 main.py --run --model best.pt --cam 0
 
 ## Arduino/OpenRB
 
-`robot_5dof_ax12a.ino`는 5DOF만 사용한다.
+`robot_5dof_ax12a.ino`는 openRB에서만 사용한다.
 
 - ID1: Base
 - ID2: Shoulder
