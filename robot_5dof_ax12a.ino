@@ -1,3 +1,4 @@
+// openRB 사용시 필요 코드 정확한 코드 미구현 상태
 #include <Dynamixel2Arduino.h>
 
 #if defined(ARDUINO_OpenRB)
